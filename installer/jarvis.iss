@@ -25,7 +25,7 @@ WizardStyle=modern
 [Files]
 Source: "..\dist\JARVIS\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs
 ; First install gets a starter config; never overwrite an existing one.
-Source: "..\dist\JARVIS\config.example.json"; DestDir: "{app}"; DestName: "config.json"; Flags: onlyifdoesntexist
+Source: "..\config.example.json"; DestDir: "{app}"; DestName: "config.json"; Flags: onlyifdoesntexist
 
 [Icons]
 Name: "{group}\JARVIS"; Filename: "{app}\{#MyAppExeName}"
